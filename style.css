@@ -2,29 +2,28 @@
   @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
 
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
 
-    min-height: 100vh;
-}
 header img{
     height: 5vh;
 }
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: white;
     align-items: center ;
-    padding: 1em 2em;
     font-family: 'Karla', sans-serif;
+    height: 10vh;
 }
 
 nav{
@@ -37,7 +36,12 @@ a{
     text-decoration: none;
     font-size: 1.1em;
     font-weight: bolder;
+
+    display: flex;
+    align-items: center;
 }
+
+
 
 nav ul{
     display: flex;
@@ -45,10 +49,13 @@ nav ul{
     margin-left: 2em;
     gap: 3em;
     text-transform: capitalize;
+    align-items: center;
+   
 }
 
 nav > ul > li > a >img{
-    height: 1.5vh;
+    height: 1.3vh;
+    padding-left: 1em;
 }
 
 #container-botoes button{
@@ -65,40 +72,71 @@ nav > ul > li > a >img{
 }
 
 main{
-    flex: 1;
-    background-color: #297DB3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 10vh);
 }
+
+
 #content-home{
+    
     display: flex;
+}
+
+#container-home > div > img{
+  height: 50vh;
    
 }
+
 
 #content-frase{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
 }
+
+
 
 #content-frase > form > input{
     border: none;
     border-radius: 20px;
     padding: 1em;
+    flex: 1;
+    background-color: #297DB3;
+    border: 1px solid white;
 }
 
 form{
     display: flex;
     align-items: center;
     gap: 5px;
+    padding-top: 2em;
+}
+
+#container-home{
+   flex: 1;
+   background-color: #297DB3;
+justify-content: space-around;
+   display: flex;
+   align-items: center;
+ 
 }
 
 
-#container-home h1{
-   font-size: 2.5em;
-   font-family: 'Karla', sans-serif;
+#container-home span{
+   font-size: 4em;
    font-weight: 700;
-   padding-bottom: 1em;
+  color: white;
+  font-family: 'Bebas Neue', sans-serif;
+  font-style: italic;
+
 }
 
+::placeholder{
+    font-style: italic;
+    text-align: left;
+    color: white;
+}
+
+ 
