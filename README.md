@@ -1,4 +1,4 @@
-# Strans overt-hook.surge.sh
+# Strans 
 
 LINK DO SITE !!!
 [STRANS](https://overt-hook.surge.sh)
