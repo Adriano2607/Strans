@@ -97,10 +97,11 @@ nav ul {
     text-transform: capitalize;
     border: none;
     font-size: 1em;
-    background-color: var(--cor-secundaria-vermelho);
+    background-color: white;
     color: black;
     cursor: pointer;
     font-weight: bold;
+    border: 1px solid black;
 }
 
 #container-logo {
@@ -109,7 +110,6 @@ nav ul {
 
 
 .container-home {
-    flex: 1;
     background-color: var(--cor-principal);
     justify-content: space-evenly;
     display: flex;
