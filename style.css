@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+
 
 /* cores */
 :root {
     --cor-principal: #2231BF;
+    --cor-secundaria-vermelho:#f64444;
 }
 
 ::placeholder {
@@ -32,6 +37,8 @@ header {
     align-items: center;
     font-family: 'Karla', sans-serif;
     height: 10vh;
+    position: sticky;
+    top: 0;
 }
 
 header img {
@@ -39,18 +46,6 @@ header img {
 }
 
 
-#container-botoes button {
-    border-radius: 20px;
-    padding: 1em 2.5em;
-    text-transform: capitalize;
-    border: none;
-    font-size: 1em;
-    font-weight: bolder;
-}
-
-#container-logo {
-    display: flex;
-}
 
 nav>ul>li>a>img {
     height: 1.3vh;
@@ -88,23 +83,39 @@ nav ul {
 /* fim header -------------------------------------------------------------------------------------------------------------*/
 
 
-/* pagina inicial ----------------------------------------------------------------------------------------------------------*/
+/* primeira pagina  ----------------------------------------------------------------------------------------------------------*/
 
-#container-home>div>img {
+.container-home>div>img {
     height: 50vh;
 
 }
 
-#container-home {
+#container-botoes button {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 20px;
+    padding: 0.8em 2.5em;
+    text-transform: capitalize;
+    border: none;
+    font-size: 1em;
+    background-color: var(--cor-secundaria-vermelho);
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#container-logo {
+    display: flex;
+}
+
+
+.container-home {
     flex: 1;
     background-color: var(--cor-principal);
     justify-content: space-evenly;
     display: flex;
     align-items: center;
     height: calc(100vh - 10vh);
-
 }
-
 
 
 #content-frase {
@@ -114,13 +125,13 @@ nav ul {
 
 }
 
-#container-input{
+#container-input {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.fa-solid{
+.fa-solid {
     font-size: 2em;
     color: white;
 }
@@ -134,12 +145,12 @@ nav ul {
     background-color: white;
     border: 1px solid white;
     flex: 1;
-    
+
 }
 
 
 
-#container-home span {
+.container-home span {
     font-size: 4em;
     font-weight: 700;
     color: white;
@@ -149,44 +160,102 @@ nav ul {
 }
 
 
-/* fim home */
-
 
 /* segunda pagina ----------------------------------------------------------------------------------------------------------------------*/
 
 .container-segundaPagina {
     background-color: white;
     height: 100vh;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background-image: url(icon/humano.png);
-   background-repeat: no-repeat;
-   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#content-imgSegundapagina>img {
+    height: 70vh;
 }
 
 
-.content-segundaPagina{
-display: flex;
-align-items: center;
-flex-direction: column;
-max-width: 25%;
+.container-segundaPagina {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.content-segundaPagina h1{
-    font-family: 'Karla', sans-serif;
-    font-size: 3em;
+
+
+#content-segundaPagina {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 25%;
+    padding: 2em;
+    box-shadow: 0px 0px 20px -11px var(--cor-secundaria-vermelho);
+    border-radius: 20px;
+
 }
 
-/* fim segunda pagina */
+#content-segundaPagina h1 {
+    font-weight: 700;
+    font-size: 1.8em;
+    text-align: left;
+}
+
+#content-segundaPagina p {
+    font-weight: 500;
+    margin-top: 1em;
+    text-align: justify;
+    line-height: 1.5em;
+    font-style: normal;
+
+}
+
+#content-segundaPagina button {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    background-color: var(--cor-secundaria-vermelho);
+    color: white;
+    border: none;
+    padding: 1em;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+
+}
+
+
+/* fim segunda pagina ---------------------------------------------------------------------------------------------*/
+
+
+/* terceira pagina -----------------------------------------------------------------------------------------------*/
+
+.container-terceirapagina{
+height: 100vh;
+background-color: var(--cor-principal);
+color: white;
+text-align: center;
+font-size: 4em;
+}
+
+/* fim terceira pagina ---------------------------------------------------------------------------------- */
+
+
+/* quarta pagina -----------------------------------------------------------------------------------------------*/
+
+.container-quartaPagina{
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    text-align: center;
+    font-size: 4em;
+    }
+    
+    /* fim qaurta pagina ---------------------------------------------------------------------------------- */
+
+
+/* responsivo iphone xr */
 
 
 
 
-
-
-
-
-
-
-
+/* fim responsivo */
