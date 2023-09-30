@@ -8,7 +8,7 @@
 /* cores */
 :root {
     --cor-principal: #2231BF;
-    --cor-secundaria-vermelho:#f64444;
+    --cor-secundaria-vermelho: #f64444;
 }
 
 ::placeholder {
@@ -164,28 +164,33 @@ nav ul {
 /* segunda pagina ----------------------------------------------------------------------------------------------------------------------*/
 
 .container-segundaPagina {
+    display: flex;
+}
+
+
+#content-segundaPagina {
     background-color: white;
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+
 
 }
 
+#content-segundapagina,
 #content-imgSegundapagina>img {
     height: 70vh;
 }
 
 
-.container-segundaPagina {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.container-servicos {
+    display: inline-block;
 }
 
 
 
-#content-segundaPagina {
+#content-servicos {
     font-family: 'Montserrat', sans-serif;
     max-width: 25%;
     padding: 2em;
@@ -194,13 +199,13 @@ nav ul {
 
 }
 
-#content-segundaPagina h1 {
+#content-servicos h1 {
     font-weight: 700;
     font-size: 1.8em;
     text-align: left;
 }
 
-#content-segundaPagina p {
+#content-servicos p {
     font-weight: 500;
     margin-top: 1em;
     text-align: justify;
@@ -209,7 +214,7 @@ nav ul {
 
 }
 
-#content-segundaPagina button {
+#content-servicos button {
     display: flex;
     align-items: center;
     margin-top: 1em;
@@ -229,12 +234,12 @@ nav ul {
 
 /* terceira pagina -----------------------------------------------------------------------------------------------*/
 
-.container-terceirapagina{
-height: 100vh;
-background-color: var(--cor-principal);
-color: white;
-text-align: center;
-font-size: 4em;
+.container-terceirapagina {
+    height: 100vh;
+    background-color: var(--cor-principal);
+    color: white;
+    text-align: center;
+    font-size: 4em;
 }
 
 /* fim terceira pagina ---------------------------------------------------------------------------------- */
@@ -242,20 +247,95 @@ font-size: 4em;
 
 /* quarta pagina -----------------------------------------------------------------------------------------------*/
 
-.container-quartaPagina{
+.container-quartaPagina {
     height: 100vh;
     background-color: rgb(255, 255, 255);
     color: black;
     text-align: center;
     font-size: 4em;
-    }
-    
-    /* fim qaurta pagina ---------------------------------------------------------------------------------- */
+}
+
+/* fim qaurta pagina ---------------------------------------------------------------------------------- */
 
 
 /* responsivo iphone xr */
 
+@media screen and (max-width:450px) {
 
+    header {
+        font-size: 10px;
+    }
+
+    .container-home span {
+        font-size: 3em;
+
+    }
+
+    #container-botoes {
+        display: none;
+    }
+
+
+    .container-home {
+        background-color: var(--cor-principal);
+        justify-content: center;
+        height: 100%;
+        padding: 7em 0;
+
+    }
+
+
+    nav ul {
+        width: 100%;
+        font-size: 1.5em;
+        gap: 1em;
+        margin-left: 10px;
+    }
+
+
+    nav>ul>li>a>img {
+        display: none;
+    }
+
+
+
+    .container-home>div>img {
+        display: none;
+    }
+
+    #content-segundaPagina {
+
+        height: auto;
+
+
+    }
+
+    #content-servicos {
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 20px;
+        max-width: 100%;
+
+    }
+
+
+    #content-imgSegundapagina>img {
+        display: none;
+    }
+
+
+    #content-servicos h1 {
+        text-align: justify;
+    }
+
+    .container-home span {
+        text-align: center;
+       
+    }
+
+    #container-input {
+       margin-top: .5em;
+    }
+}
 
 
 /* fim responsivo */
