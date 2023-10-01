@@ -165,16 +165,16 @@ nav ul {
 
 .container-segundaPagina {
     display: flex;
+    height: 100vh;
 }
 
 
 #content-segundaPagina {
     background-color: white;
-    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-
+   justify-content: center;
+ 
 
 }
 
@@ -184,16 +184,12 @@ nav ul {
 }
 
 
-.container-servicos {
-    display: inline-block;
-}
-
-
 
 #content-servicos {
     font-family: 'Montserrat', sans-serif;
     max-width: 25%;
     padding: 2em;
+    margin-left:10%;
     box-shadow: 0px 0px 20px -11px var(--cor-secundaria-vermelho);
     border-radius: 20px;
 
@@ -248,12 +244,41 @@ nav ul {
 /* quarta pagina -----------------------------------------------------------------------------------------------*/
 
 .container-quartaPagina {
+    font-family: 'Montserrat', sans-serif;
     height: 100vh;
     background-color: rgb(255, 255, 255);
     color: black;
-    text-align: center;
-    font-size: 4em;
+    text-align: justify;
+    padding: 5em;
 }
+
+#content-titulo{
+    margin-bottom: 2%;
+}
+
+#content-titulo > h1{
+  font-size: 2em;
+}
+
+
+
+  .question{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+  }
+
+  .container-quartaPagina h1{
+    text-transform: capitalize;
+  }
+
+  .espaco-img{
+    margin-left: 2%;
+  }
+
+
+
+
 
 /* fim qaurta pagina ---------------------------------------------------------------------------------- */
 
@@ -263,7 +288,7 @@ nav ul {
 @media screen and (max-width:450px) {
 
     header {
-        font-size: 10px;
+        font-size: 7px;
     }
 
     .container-home span {
@@ -303,18 +328,16 @@ nav ul {
         display: none;
     }
 
-    #content-segundaPagina {
-
-        height: auto;
-
-
+    .container-segundaPagina {
+       height: auto;
     }
 
     #content-servicos {
         font-family: 'Montserrat', sans-serif;
         border-radius: 20px;
         max-width: 100%;
-
+        margin: 0;
+      
     }
 
 
@@ -335,6 +358,33 @@ nav ul {
     #container-input {
        margin-top: .5em;
     }
+
+    .container-quartaPagina {
+      padding: 2em;
+
+
+    }
+
+    .question> img{
+        display: none;
+    }
+
+  
+
+    .espaco-img{
+        margin-left: 0%;
+        text-align: left;
+        font-size: .8em;
+
+    }
+
+    #content-titulo{
+        font-size: .8em;
+    }
+
+   
+
+    
 }
 
 
