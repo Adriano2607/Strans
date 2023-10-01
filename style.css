@@ -122,6 +122,7 @@ nav ul {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 
 }
 
@@ -132,8 +133,12 @@ nav ul {
 }
 
 .fa-solid {
-    font-size: 2em;
-    color: white;
+    font-size: 1.7em;
+    color: rgb(0, 0, 0);
+}
+
+.fas, .fa-solid {
+	margin-left: -1.9em;
 }
 
 
