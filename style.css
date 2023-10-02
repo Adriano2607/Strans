@@ -41,8 +41,14 @@ header {
     top: 0;
 }
 
+#container-botoes button:hover{
+    background-color: var(--cor-secundaria-vermelho);
+    color: white;
+    border: none;
+}
+
 header img {
-    height: 5vh;
+    height: 6vh;
 }
 
 
@@ -132,16 +138,10 @@ nav ul {
     gap: 10px;
 }
 
-.fa-solid {
-    font-size: 1.7em;
-    color: rgb(0, 0, 0);
+#container-input img{
+    margin-left: -3.4em;
+    height: 4vh;
 }
-
-.fas, .fa-solid {
-	margin-left: -1.9em;
-}
-
-
 
 #container-input>input {
     border: none;
@@ -250,7 +250,7 @@ nav ul {
 
 .container-quartaPagina {
     font-family: 'Montserrat', sans-serif;
-    height: 100vh;
+    height: calc(100vh - 10vh);
     background-color: rgb(255, 255, 255);
     color: black;
     text-align: justify;
@@ -264,8 +264,6 @@ nav ul {
 #content-titulo > h1{
   font-size: 2em;
 }
-
-
 
   .question{
     display: flex;
@@ -388,7 +386,11 @@ nav ul {
     }
 
    
-
+    #container-input img{
+        
+        height: 3vh;
+    }
+    
     
 }
 
