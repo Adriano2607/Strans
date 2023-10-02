@@ -41,11 +41,7 @@ header {
     top: 0;
 }
 
-#container-botoes button:hover{
-    background-color: var(--cor-secundaria-vermelho);
-    color: white;
-    border: none;
-}
+
 
 header img {
     height: 6vh;
@@ -96,6 +92,12 @@ nav ul {
 
 }
 
+#container-botoes button:hover{
+    background-color: var(--cor-secundaria-vermelho);
+    color: white;
+    border: none;
+}
+
 #container-botoes button {
     font-family: 'Montserrat', sans-serif;
     border-radius: 20px;
@@ -140,7 +142,7 @@ nav ul {
 
 #container-input img{
     margin-left: -3.4em;
-    height: 4vh;
+    height: 3vh;
 }
 
 #container-input>input {
@@ -386,10 +388,7 @@ nav ul {
     }
 
    
-    #container-input img{
-        
-        height: 3vh;
-    }
+   
     
     
 }
