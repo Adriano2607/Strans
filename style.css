@@ -32,7 +32,8 @@
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 5em;
     background-color: white;
     align-items: center;
     font-family: 'Karla', sans-serif;
