@@ -10,13 +10,21 @@
     --cor-principal: #2231BF;
     --cor-secundaria-vermelho: #f64444;
 }
+/* :root {
+    --cor-principal: #2231BF;
+    --cor-secundaria-vermelho: #f64444;
+} */
 
 ::placeholder {
     font-style: italic;
     text-align: left;
     color: black;
 }
-
+/* ::placeholder {
+    font-style: italic;
+    text-align: left;
+    color: black;
+} */
 
 
 * {
@@ -397,24 +405,12 @@ nav ul {
 
 #tipos-de-envio > div:hover {
     transform: scale(1.02);
-    
     opacity: 0.97;
 }
 
 
 
-/* display: flex;
-    align-items: center;
-    margin-top: 1em;
-    background-color: var(--cor-secundaria-vermelho);
-    color: white;
-    border: none;
-    padding: 1em;
-    border-radius: 15px;
-    font-family: 'Montserrat', sans-serif;
-    cursor: pointer; */
-
-/* ultima seção - contato */
+/* ultima seção - contato
 #entre-em-contato {
     height: 100vh;
     margin-top: 10vh;
@@ -424,12 +420,42 @@ nav ul {
     text-align: justify;
     font-family: 'Montserrat', sans-serif;
     padding: 5em;
+} */
+
+
+
+/* Seção sobre a empresa */
+#sobre-a-empresa {
+    height: 100vh;
+    /* margin-top: 10vh; */
+    background-color: white;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    padding: 3em 8em;
 }
 
+#sobre-a-empresa > h2 {
+    padding-bottom: 4vh;
+    margin-left: -2vw;
+}
 
+#sobre-a-empresa a {
+    display: inline;
+    color: #f64444;
+}
 
+#sobre-a-empresa p {
+    padding-bottom: 5vh;
+    font-size: 0.9em;
+    text-align: justify;
+}
 
-
+#sobre-a-empresa ul {
+    padding-left: 3vw;
+    font-size: 0.9em;
+    padding-bottom: 5vh;
+    margin-top: -2vh;
+}
 
 
 /* Parte do Footer */
@@ -473,22 +499,9 @@ footer > ul > li:first-child svg {
 
 footer > ul > li {
     padding: 5px;
-    /* border: 1px solid black; */
     width: 80%;
     transition: font-weight linear 0.1s;
 }
-
-/* footer > ul:nth-child(5) {
-   grid-column: 1 / span 2;
-   justify-self: start;
-   width: 100%;
-}
-
-footer > ul:nth-child(6) {
-    grid-column: 3 / span 2;
-    justify-self: start;
-    width: 60%;
- } */
 
  footer > p {
     grid-column: 1 / span 4;
