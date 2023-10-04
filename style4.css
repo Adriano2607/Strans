@@ -262,8 +262,9 @@ nav ul {
     padding: 5em;
 }
 
-#content-titulo {
+#content-titulo-perguntas {
     margin-bottom: 2%;
+    text-align: left;
 }
 
 #content-titulo>h1 {
@@ -297,46 +298,63 @@ nav ul {
     background-color: var(--cor-principal);
     color: white;
     font-family: 'Montserrat', sans-serif;
-    padding: 3em;
-  
+    padding: 2em 5em;
+    background-image: url(icon/estrada.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    height: 100vh;
+
+
 }
 
-#content-titulo{
-    text-align: center;
-   
-}
 
-#content-estados{
+#content-estados {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.destinos img{
-    height: 60vh;
+.destinos img {
+    height: 50vh;
+}
+
+
+.container-estados>ul>li:first-child {
+    font-weight: bold;
+    list-style: none;
+}
+
+
+.container-estados>ul>li>span {
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 
 
-.container-details{
-    margin-left: 7%;
-    box-shadow: 0px 0px 20px -11px black;
-    padding: 1em;
+.container-estados {
+    padding: 1.5em;
     display: flex;
-    flex-direction: column;
-  
+    text-transform: uppercase;
+    gap: 2em;
+
 }
 
-.container-details details{
-   cursor: pointer;
-   padding-top: 1em;
-   font-weight: bold
-   
+.container-estados ul {
+    box-shadow: 0px 0px 20px -11px rgb(255, 255, 255);
+    padding: 1.5em;
+}
+
+.container-estados>ul>li {
+    padding: .3em;
 }
 
 
-
-
+#content-titulo{
+    text-align: center;
+    padding-bottom: 4em;
+}
 
 
 /* fim destino pagina ---------------------------------------------------------------------------------- */
@@ -676,6 +694,8 @@ footer>ul>li:not(:first-child):hover a {
         font-size: .8em;
     }
 
+  
+
 
 
 
@@ -735,7 +755,7 @@ footer>ul>li:not(:first-child):hover a {
         height: 100vh;
         /* width: 90vw; */
         padding: 3em 2em;
-     
+
     }
 
     #sobre-a-empresa>h2 {
