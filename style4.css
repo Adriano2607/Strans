@@ -323,14 +323,8 @@ nav ul {
 .container-estados>ul>li:first-child {
     font-weight: bold;
     list-style: none;
-}
-
-
-.container-estados>ul>li>span {
-    font-weight: bold;
     font-size: 1.2em;
 }
-
 
 
 .container-estados {
