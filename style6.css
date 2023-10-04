@@ -210,6 +210,12 @@ nav ul {
     text-align: left;
 }
 
+#content-servicos > button > img {
+height: 3vh;
+margin-left: 5%;
+    
+}
+
 #content-servicos p {
     font-weight: 500;
     margin-top: 1em;
@@ -224,7 +230,7 @@ nav ul {
     align-items: center;
     margin-top: 1em;
     background-color: var(--cor-secundaria-vermelho);
-    color: white;
+    color: black;
     border: none;
     padding: 1em;
     border-radius: 15px;
@@ -293,8 +299,8 @@ nav ul {
 /*  pagina destinos ---------------------------------------------------------------------------------- */
 
 .destinos {
-    background-color:#57aed1 ;
-    color: black;
+    background-color:#446f92;
+    color: white;
     font-family: 'Montserrat', sans-serif;
     padding: 2em 5em;
     background-image: url(icon/estrada.png);
@@ -653,15 +659,22 @@ footer>ul>li:not(:first-child):hover a {
 
     header {
         font-size: 7px;
+       display: flex;
+       justify-content: center;    
     }
+
 
     .container-home span {
         font-size: 3em;
+    }
 
+    nav{
+        margin-left: 3em;
     }
 
     #container-botoes {
         display: none;
+    
     }
 
 
@@ -673,12 +686,17 @@ footer>ul>li:not(:first-child):hover a {
 
     }
 
+    nav > ul > li >a{
+        text-decoration: underline;
+    }
+
 
     nav ul {
         width: 100%;
         font-size: 1.5em;
-        gap: 1em;
+        gap: .3em;
         margin-left: 10px;
+        display: grid;
     }
 
 
