@@ -40,6 +40,7 @@ header {
     height: 10vh;
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 
 
@@ -300,24 +301,20 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-#content-regiao {
-    background-color: var(--cor-principal) ;
-    color: white;
-    padding: 1em;
+.box{
+    height: 60vh;
+    border: 1px solid black;
     box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
+    padding: 1em;
 
 }
 
-#content-regiao ol {
-   list-style-type: none;
+.box img{
+    height: 15vh;
 }
-
-#content-regiao h1 {
-    padding-bottom: 1em;
- }
 
 
 
@@ -717,6 +714,7 @@ footer>ul>li:not(:first-child):hover a {
         height: 100vh;
         /* width: 90vw; */
         padding: 3em 2em;
+     
     }
 
     #sobre-a-empresa>h2 {
@@ -725,7 +723,7 @@ footer>ul>li:not(:first-child):hover a {
     }
 
     #sobre-a-empresa p {
-        padding-bottom: 4vh;
+        padding-bottom: 2vh;
     }
 
     /* Footer */
