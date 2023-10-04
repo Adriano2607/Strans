@@ -142,8 +142,8 @@ nav ul {
     gap: 10px;
 }
 
-#container-input img {
-    margin-left: -3.4em;
+#container-input > label > img {
+    margin-left: -4em;
     height: 3vh;
 }
 
@@ -156,6 +156,7 @@ nav ul {
     flex: 1;
 
 }
+
 
 
 
