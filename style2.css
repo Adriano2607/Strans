@@ -300,17 +300,26 @@ margin-left: 5%;
 /*  pagina destinos ---------------------------------------------------------------------------------- */
 
 .destinos {
-    background-color:#446f92;
     color: white;
     font-family: 'Montserrat', sans-serif;
     padding: 2em 5em;
-    background-image: url(icon/estrada.png);
+    height: calc(100vh - 10vh);
+    position: relative;
+}
+
+.destinos::before {
+    content: "";
+    background-image: url(icon/SWay_.jpeg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% auto;
-    height: 100vh;
-
-
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(0.15);
+    z-index: -1;
 }
 
 
@@ -318,6 +327,7 @@ margin-left: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 2em;
    
 }
 
@@ -344,6 +354,7 @@ margin-left: 5%;
 
 .container-estados ul {
     padding: 1.5em;
+    border: 1px solid white;
 
 
 }
@@ -354,8 +365,13 @@ margin-left: 5%;
 
 
 #content-titulo{
-    text-align: center;
+    text-align: left;
     padding-bottom: 2em;
+}
+
+#content-titulo-destino{
+    text-align: center;
+    font-size: 2em;
 }
 
 
@@ -370,16 +386,17 @@ margin-left: 5%;
 #tipos-de-envio {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 80px 1fr;
     grid-column-gap: 20px;
-    grid-row-gap: 30px;
+    /* grid-row-gap: 30px; */
     justify-items: center;
     /* align-items: center; */
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: #2231BF;
     color: white;
     font-family: 'Montserrat', sans-serif;
-    padding: 3em 3em 8em 3em;
+    /* padding: 3em 3em 8em 3em; */
+    padding: 5em;
 }
 
 #tipos-de-envio>h2 {
@@ -429,6 +446,7 @@ margin-left: 5%;
     font-family: 'Bebas Neue', sans-serif;
     font-style: italic;
     /* margin-top: -10px; */
+    padding-bottom: 0.7em;
 }
 
 .texto-vermelho {
@@ -438,16 +456,31 @@ margin-left: 5%;
     font-family: 'Bebas Neue', sans-serif;
 }
 
-#tipos-de-envio>div>p {
-    padding: 1em 1em 2em;
+#tipos-de-envio > div p {
+    /* padding: 1em 1em 2em 0em; */
+    /* background-color: red; */
+    padding-bottom: 1.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size: 0.9em;
+    flex: 1;
+    text-align: justify;
+}
+
+.info {
+    padding-bottom: 1.5em;
+    padding-left: 0.35em;
+    padding-right: 0.35em;
     font-size: 1em;
     flex: 1;
     text-align: justify;
 }
 
+
+
 .saiba-mais {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     font-size: 0.8em;
     font-weight: normal;
@@ -460,10 +493,6 @@ margin-left: 5%;
     border-radius: 15px;
     font-family: 'Montserrat', sans-serif;
     cursor: pointer;
-}
-
-.saiba-mais h4 {
-    margin-right: 5px;
 }
 
 #tipos-de-envio>div:first-of-type {
@@ -498,8 +527,7 @@ margin-left: 5%;
 
 #sobre-a-empresa>h2 {
     padding-bottom: 4vh;
-    /* margin-left: -2vw; */
-    text-align: center;
+    margin-left: -2vw;
 }
 
 #sobre-a-empresa a {
@@ -528,13 +556,13 @@ margin-left: 5%;
     color: white;
     text-align: justify;
     font-family: 'Montserrat', sans-serif;
-    padding: 3em 5em;
+    padding: 5em;
 }
 
 #entre-em-contato h2 {
     font-size: 2em;
     font-weight: 900;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 #entre-em-contato p {
@@ -545,7 +573,7 @@ margin-left: 5%;
 #entre-em-contato > form {
     width: 50%;
     margin-left: 50%;
-    padding-top: 10px;
+    padding-top: 40px;
 }
 
 #entre-em-contato form > div {
@@ -578,7 +606,7 @@ margin-left: 5%;
     background-color: #f64444;
     width: 40%;
     text-align: center;
-    color: black;
+    color: white;
     padding: 1em;
     border-radius: 15px;
     font-family: 'Montserrat', sans-serif;
@@ -590,14 +618,13 @@ footer {
     min-height: 95vh;
     background-color: white;
     display: grid;
-    /* padding: 48px; */
     padding: 5em 5em 0em 5em;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-row-gap: 50px;
-    /* margin-top: 100px; */
     font-family: 'Karla', sans-serif;
 }
 
+/* Todos os links das li a partir do segundo */
 footer>ul>li:not(:first-child) a {
     font-weight: normal;
 }
@@ -610,7 +637,7 @@ footer>ul {
     list-style-type: none;
 }
 
-
+/* Primeiro elemento li de uma ul */
 footer>ul>li:first-child {
     font-weight: 800;
     margin-bottom: 5px;
@@ -620,6 +647,7 @@ footer>ul>li:first-child {
     transform: translateX(0px);
 }
 
+/* O svg */
 footer>ul>li:first-child svg {
     margin-left: 5px;
     color: mediumblue;
@@ -639,8 +667,12 @@ footer>p {
     padding-top: 10px;
 }
 
-/* Efeitos de Hover nos links principais do Footer */
+footer a {
+    display: inline;
+}
 
+
+/* Efeitos de Hover nos links principais do Footer */
 footer>ul>li:first-child:hover {
     transform: translateX(10px);
 }
@@ -665,8 +697,7 @@ footer>ul>li:not(:first-child):hover a {
 
     header {
         font-size: 7px;
-       display: flex;
-       justify-content: center;    
+  
     }
 
 
@@ -728,6 +759,17 @@ footer>ul>li:not(:first-child):hover a {
 
     }
 
+    #container-logo{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    #content-titulo-destino{
+        font-size: 1em;
+    }
 
     #content-imgSegundapagina>img {
         display: none;
@@ -773,7 +815,17 @@ footer>ul>li:not(:first-child):hover a {
         height: auto;
         background-color: var(--cor-principal);
         color: white;
+        padding:1.5em;
     }
+
+    #content-estados{
+       text-align: center;
+    }
+
+    .container-estados > ul {
+       list-style: none;
+     }
+ 
 
     .container-estados {
       display: flex;
@@ -799,14 +851,15 @@ footer>ul>li:not(:first-child):hover a {
         justify-content: start;
         align-items: center;
         text-align: center;
-        min-height: 90vh;
+        min-height: 100vh;
         /* width: 90vw; */
         background-color: #12304c;
+        padding: 7em 3em;
     }
 
     #tipos-de-envio>h2 {
         font-size: 1.1em;
-        padding-bottom: 10px;
+        padding-bottom: 5vh;
     }
 
     #tipos-de-envio>div {
@@ -817,6 +870,7 @@ footer>ul>li:not(:first-child):hover a {
         justify-content: center;
         align-items: center;
         width: 90%;
+        margin-bottom: 5vh;
     }
 
     #tipos-de-envio>div>h3 {
@@ -831,7 +885,11 @@ footer>ul>li:not(:first-child):hover a {
         font-size: 0.85em;
     }
 
-    #tipos-de-envio img {
+    /* #tipos-de-envio img {
+        display: none;
+    } */
+
+    .icones-transportes > img {
         display: none;
     }
 
