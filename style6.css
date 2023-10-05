@@ -300,17 +300,26 @@ margin-left: 5%;
 /*  pagina destinos ---------------------------------------------------------------------------------- */
 
 .destinos {
-    background-color:#446f92;
     color: white;
     font-family: 'Montserrat', sans-serif;
     padding: 2em 5em;
-    background-image: url(icon/estrada.png);
+    height: calc(100vh - 10vh);
+    position: relative;
+}
+
+.destinos::before {
+    content: "";
+    background-image: url(icon/SWay_.jpeg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% auto;
-    height: 100vh;
-
-
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: brightness(0.15);
+    z-index: -1;
 }
 
 
@@ -318,6 +327,7 @@ margin-left: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 2em;
    
 }
 
@@ -344,6 +354,7 @@ margin-left: 5%;
 
 .container-estados ul {
     padding: 1.5em;
+    border: 1px solid white;
 
 
 }
@@ -354,8 +365,13 @@ margin-left: 5%;
 
 
 #content-titulo{
-    text-align: center;
+    text-align: left;
     padding-bottom: 2em;
+}
+
+#content-titulo-destino{
+    text-align: center;
+    font-size: 2em;
 }
 
 
@@ -660,8 +676,7 @@ footer>ul>li:not(:first-child):hover a {
 
     header {
         font-size: 7px;
-       display: flex;
-       justify-content: center;    
+  
     }
 
 
@@ -723,6 +738,17 @@ footer>ul>li:not(:first-child):hover a {
 
     }
 
+    #container-logo{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    #content-titulo-destino{
+        font-size: 1em;
+    }
 
     #content-imgSegundapagina>img {
         display: none;
@@ -768,7 +794,17 @@ footer>ul>li:not(:first-child):hover a {
         height: auto;
         background-color: var(--cor-principal);
         color: white;
+        padding:1.5em;
     }
+
+    #content-estados{
+       text-align: center;
+    }
+
+    .container-estados > ul {
+       list-style: none;
+     }
+ 
 
     .container-estados {
       display: flex;
