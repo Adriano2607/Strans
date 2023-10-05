@@ -231,7 +231,7 @@ margin-left: 5%;
     align-items: center;
     margin-top: 1em;
     background-color: var(--cor-secundaria-vermelho);
-    color: black;
+    color: white;
     border: none;
     padding: 1em;
     border-radius: 15px;
@@ -488,7 +488,7 @@ margin-left: 5%;
     background-color: #f64444;
     width: 40%;
     text-align: center;
-    color: black;
+    color: white;
     padding: 1em;
     border-radius: 15px;
     font-family: 'Montserrat', sans-serif;
@@ -880,7 +880,7 @@ footer>ul>li:not(:first-child):hover a {
         text-align: center;
         min-height: 100vh;
         /* width: 90vw; */
-        background-color: #12304c;
+        /* s */
         padding: 7em 3em;
     }
 
@@ -970,7 +970,7 @@ footer>ul>li:not(:first-child):hover a {
         min-height: 90vh;
         /* margin-top: 70vh; arrumei aqui, no celular fica bom, no site fica ruim, aumentar padding-bottom da section de cima será? */
         padding: 2em;
-        background-color: #12304c;
+        /* background-color: #12304c; */
     }
 
     #entre-em-contato > form {
