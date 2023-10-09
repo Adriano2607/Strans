@@ -320,15 +320,13 @@ margin-left: 5%;
 }
 
 
-
 #content-estados {
     display: flex;
     align-items: center;
     padding-top: 2em;
-   
 }
 
-.destinos > img{
+#content-img > img{
 height: 60vh;
 float: right;
 
@@ -735,12 +733,19 @@ footer>ul>li:not(:first-child):hover a {
 
 @media screen and (max-width:450px) {
 
- 
-
-
-    .container-estados > img {
-       display: none;
+    #content-img {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
+    #content-img img{
+        
+        height: 20vh;
+    }
+
 
     .destinos > h1 {
         font-size: 1.5em;
@@ -748,7 +753,9 @@ footer>ul>li:not(:first-child):hover a {
     }
 
     .destinos {
+        display: grid;
        height: 100%;
+      
     }
 
   
