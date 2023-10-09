@@ -328,8 +328,9 @@ margin-left: 5%;
    
 }
 
-.container-estados > img{
-height: 45vh;
+.destinos > img{
+height: 60vh;
+float: right;
 
 }
 
@@ -345,7 +346,7 @@ height: 45vh;
     }
 
     .container-estados > ul {
-        width: 10vw;
+        width: 15vw;
          
          }
 
@@ -363,8 +364,8 @@ height: 45vh;
 
     display: flex;
     text-transform: uppercase;
-    gap: 2em;
-    
+    gap: 1.5em;
+      
 
 }
 
