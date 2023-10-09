@@ -733,17 +733,9 @@ footer>ul>li:not(:first-child):hover a {
 
 @media screen and (max-width:450px) {
 
-    #content-img {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
     #content-img img{
         
-        height: 20vh;
+display: none;
     }
 
 
