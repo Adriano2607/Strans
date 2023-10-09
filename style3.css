@@ -309,36 +309,47 @@ margin-left: 5%;
     font-family: 'Montserrat', sans-serif;
     padding: 2em 5em;
     height: calc(100vh - 10vh);
-    position: relative;
+    background-image: url(icon/bg.png);
+    background-color: #2231BF;
+
 }
 
-.destinos::before {
-    content: "";
-    background-image: url(icon/SWay_.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    filter: brightness(0.15);
-    z-index: -1;
+.destinos > h1{
+    font-size: 2em;
+    font-family: 'Bebas Neue', sans-serif;
 }
+
 
 
 #content-estados {
     display: flex;
     align-items: center;
-    justify-content: center;
     padding-top: 2em;
    
 }
 
-.destinos img {
-    height: 50vh;
+.container-estados > img{
+height: 45vh;
+
 }
+
+.container-estados > ul > li{
+    display: flex;
+    align-items: center;
+    
+    }
+
+.container-estados > ul > li > img{
+   height: 2vh;
+    
+    }
+
+    .container-estados > ul {
+        width: 10vw;
+         
+         }
+
+
 
 
 .container-estados>ul>li:first-child {
@@ -357,12 +368,7 @@ margin-left: 5%;
 
 }
 
-.container-estados ul {
-    padding: 1.5em;
-    border: 1px solid white;
 
-
-}
 
 .container-estados>ul>li {
     padding: .3em;
@@ -727,6 +733,23 @@ footer>ul>li:not(:first-child):hover a {
 
 
 @media screen and (max-width:450px) {
+
+ 
+
+
+    .container-estados > img {
+       display: none;
+    }
+
+    .destinos > h1 {
+        font-size: 1.5em;
+      
+    }
+
+    .destinos {
+       height: 100%;
+    }
+
   
     nav{
         display: none;
@@ -866,16 +889,10 @@ footer>ul>li:not(:first-child):hover a {
         font-size: .8em;
     }
 
-    .destinos {
-        background-image: none;
-        height: auto;
-        background-color: var(--cor-principal);
-        color: white;
-        padding:1.5em;
-    }
+    
 
-    #content-estados{
-       text-align: center;
+    #content-estados ul{
+      width: 100%;
     }
 
     .container-estados > ul {
