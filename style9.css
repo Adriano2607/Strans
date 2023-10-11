@@ -430,7 +430,7 @@ float: right;
 
 .icones-transportes {
     display: flex;
-    align-content: end;
+    /* align-content: end; */
     margin-bottom: 0px;
     padding-right: 50px;
 }
@@ -463,17 +463,17 @@ float: right;
     padding-left: 0.5em;
     padding-right: 0.5em;
     font-size: 0.9em;
-    flex: 1;
+    /* flex: 1; */
     text-align: justify;
 }
 
 .info {
-    padding-bottom: 1.5em;
+    /* padding-bottom: 1.5em;
     padding-left: 0.35em;
-    padding-right: 0.35em;
-    font-size: 1em;
+    padding-right: 0.35em; */
+    /* font-size: 1em; */
     flex: 1;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 
@@ -521,10 +521,10 @@ float: right;
     margin-left: -2vw;
 }
 
-#sobre-a-empresa a {
+/* #sobre-a-empresa a {
     display: inline;
     color: #f64444;
-}
+} */
 
 #sobre-a-empresa > p {
     padding-top: 2vh;
@@ -683,7 +683,7 @@ footer>ul>li:first-child svg {
 footer>ul>li {
     padding: 5px;
     width: 80%;
-    transition: font-weight linear 0.1s;
+    /* transition: font-weight linear 0.1s; */
 }
 
 footer>p {
